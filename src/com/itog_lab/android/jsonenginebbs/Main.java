@@ -40,12 +40,11 @@ import org.json.JSONObject;
 public class Main extends Activity implements OnClickListener {
 	protected static final String TAG = "JsonEngine";
 
-	private static final String JSONENGINE_URL = "http://jsonengine.appspot.com";
-	private static final String POST_PATH = "/_je";
+	private static final String JSONENGINE_URL = "http://jsonengine.appspot.com/_je";
 	private static final String DOC_TYPE = "msg";
 	
-	private static final String MSG_QUERY_URL = JSONENGINE_URL + "/_q/" + DOC_TYPE + "?sort=_createdAt.desc&limit=100";
-	private static final String MSG_POST_URL = JSONENGINE_URL + POST_PATH + "/" + DOC_TYPE;
+	private static final String MSG_QUERY_URL = JSONENGINE_URL + "/" + DOC_TYPE + "?sort=_createdAt.desc&limit=100";
+	private static final String MSG_POST_URL = JSONENGINE_URL + "/" + DOC_TYPE;
 	
 	private Context context;
 
